@@ -1,0 +1,19 @@
+<div class="col-xs-12">
+      
+     
+      <h2>Les services qui sont dans votre entourage</h2>
+      <p>Mise a jour: {{lastUpdate| async| date : 'yMMMEEEEd'}}</p>
+      <ul class=list-group>
+        <app-liste-des-services *ngFor="let service of services; let i = index" 
+        [indexOfService]="i" 
+        [serviceName]="service.name" 
+        [serviceDescription]="service.description"
+        [serviceImportance]="service.importance" 
+        [id]="service.id"> </app-liste-des-services>
+       
+      </ul>
+      <!---<button class="btn btn-success"
+       [disabled]="!isAuth" (click)="onCours()"> 
+       Tout en cours </button>
+       <button class="btn btn-failure" [disabled]="!isAuth" (click)="onArret()"> Tout a l'arret</button> -->
+    </div>

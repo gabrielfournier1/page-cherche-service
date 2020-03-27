@@ -1,0 +1,8 @@
+<li [ngClass]="{'list-group-item': true,'list-group-item-success': serviceImportance==='attendre' }">
+    
+    <h4 [ngStyle]="{color: getColor()}"> Service: {{ serviceName}} </h4>
+    <h4> Description: {{getDescription()}}</h4>
+    <a [routerLink]="[id]">Detail</a>
+    <!-- <button class="btn btn-success" (click)="onSwitchOn()" [disabled]="serviceImportance==='attendre'">En cours</button>
+    <button class="btn btn-fail" (click)="onSwitchOff()" [disabled]="serviceImportance==='urgent'">Stop</button> -->
+</li>

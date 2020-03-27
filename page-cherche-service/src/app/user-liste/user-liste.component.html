@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of users">
+        <h3>{{user.firstName}} {{user.lastName}}</h3>
+        <p>{{user.email}}</p>
+        <p>J'habite {{user.lieu}}</p>
+        <p>Voici pourquoi je fais appelle a cette application {{user.pourquoi}}</p>
+        <p>Vous pouvez me contacter au {{user.tel}</p>
+    </li>
+</ul>
